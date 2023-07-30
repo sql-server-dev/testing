@@ -52,7 +52,7 @@ go
 -- 5 --
 
 if object_id('usp_search_sale','p')is not null
-drop procedure usp_search_sale
+drop proc usp_search_sales
 go
 
 create procedure usp_search_sale
