@@ -1,3 +1,5 @@
+-- adding these notes for a branch --
+
 -- 1 --
 select  s.salesman_id,
         salesman_name = s.name,
@@ -14,6 +16,7 @@ group   by s.salesman_id,
 having  count(*)>1;
 
 -- 2 -- 
+-- Edited right in GitHub -- just for testing purpoces.
 
 select  count(*)
 from    customer
@@ -45,11 +48,11 @@ from    orders o join ( select  customer_id,
 where   o.purch_amt > a.avg_ord_amt
 
 go
-------------------------------------------------------------------------------------
+-----------------------Next section:---------------------------------------------
 -- 5 --
 
 if object_id('usp_search_sale','p')is not null
-drop procedure usp_search_sale
+drop proc usp_search_sales
 go
 
 create procedure usp_search_sale
@@ -122,14 +125,3 @@ begin catch
 end catch
 
 go
-
-execute usp_search_sale
-@xml =
-'
-<table>
-    <columns>
-	    <column>name</column>
-	    <column>city</column>
-    </columns>
-</table>
-'
