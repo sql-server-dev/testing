@@ -125,14 +125,3 @@ begin catch
 end catch
 
 go
-
-execute usp_search_sale
-@xml =
-'
-<table>
-    <columns>
-	    <column>name</column>
-	    <column>city</column>
-    </columns>
-</table>
-'
