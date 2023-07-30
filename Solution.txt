@@ -48,7 +48,7 @@ from    orders o join ( select  customer_id,
 where   o.purch_amt > a.avg_ord_amt
 
 go
-------------------------------------------------------------------------------------
+-----------------------Next section:---------------------------------------------
 -- 5 --
 
 if object_id('usp_search_sale','p')is not null
