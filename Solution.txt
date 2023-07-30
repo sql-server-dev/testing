@@ -1,3 +1,5 @@
+-- adding these notes for a branch --
+
 -- 1 --
 select  s.salesman_id,
         salesman_name = s.name,
